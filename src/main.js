@@ -1,6 +1,7 @@
 // Load app style
 import '@/styles/app.scss'
 import 'bootstrap'
+import './controls'
+import * as ui from './ui'
 
-// Scripts
-import './scripts'
+ui.init()

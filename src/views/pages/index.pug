@@ -1,8 +1,19 @@
 extends ../layouts/pages
 block append head
-	block title
-		- var title='Home'; // Page title
+  block title
+    - var title='UFPA Graphs';
 
 block content
-	.container
-		h1 Home Page
+  .main
+    .controls
+      button#import-modal-btn.btn.btn-primary Import
+      button#dijkstra-btn.btn.btn-success Dijkstra
+
+    .faces
+      button.change-face-btn.btn(data-face=0, disabled=true) Relations
+      button.change-face-btn.btn.btn-info(data-face=1, disabled=false) Minimum Spanning Tree
+      button.change-face-btn.btn.btn-info(data-face=2, disabled=false) General
+
+    #network &nbsp;
+
+  input#import-file(type="file", multiple, style="display: none")

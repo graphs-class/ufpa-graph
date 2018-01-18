@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Sinan Mutlu <sinanm17@gmail.com>",
   "license": "MIT",
@@ -36,6 +37,7 @@
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
     "http-proxy-middleware": "^0.17.4",
     "node-sass": "^4.6.1",
@@ -53,12 +55,22 @@
     "webpack": "^3.8.1",
     "webpack-dev-middleware": "^1.12.0",
     "webpack-hot-middleware": "^2.20.0",
-    "webpack-merge": "^4.1.1"
+    "webpack-merge": "^4.1.1",
+    "worker-loader": "^1.1.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "camel-case": "^3.0.0",
+    "imlazy": "^6.3.1",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.9"
+    "jszip": "^3.1.5",
+    "node-dijkstra": "^2.5.0",
+    "p-throttle": "^1.1.0",
+    "pify": "^3.0.0",
+    "popper.js": "^1.12.9",
+    "title-case": "^2.1.1",
+    "vis": "^4.21.0",
+    "xml2js": "^0.4.19"
   },
   "engines": {
     "node": ">= 8.1.3",
